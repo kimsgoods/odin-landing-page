@@ -1,5 +1,5 @@
 *{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Roboto, sans-serif;
 }
 .header, .one{
     color:#F9FAF8;
@@ -14,9 +14,9 @@
 }
 
 .container{
-
     background-color: #1F2937;
 }
+
 body{
     margin: 0;
     padding: 0;
@@ -34,11 +34,33 @@ body{
     margin-bottom: 64px;
 }
 
-.two{
+.two, .three, .four{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 64px;
+}
+
+.three{
+    background-color: #e5e7eb;
+    padding: 50px 200px;
+    align-items: flex-end;
+}
+.four{
+    flex-direction: row;
+    background-color: #3882f6;
+    padding: 40px;
+    margin: 50px 200px 100px 200px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 30%;
+}
+.quote{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
 }
 
 .footer{
@@ -55,7 +77,28 @@ body{
     gap: 16px;
 }
 .information{
-    font:36px bolder #1f2937;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight:bolder;
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.bigger{
+    font-size: 36px;
+    color: #e5e7eb;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.smaller{
+    color: #e5e7eb;
+    font-weight: lighter;
 }
 .cards
 {
@@ -91,8 +134,9 @@ a{
 button{
     background-color: #3882f6;
     color: #e5e7eb;
-    padding:16px;
-    border-radius: 20%;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border-color: black;
 }
 #webdev{
     width: 50%;
@@ -105,3 +149,7 @@ button{
     object-fit: cover;
     aspect-ratio: 1;
 }
+html {
+    scroll-behavior: smooth;
+}
+  
